@@ -95,7 +95,7 @@ def poll() {
 	}
 
   sendEvent(name: 'contact', value: contact)
-	sendEvent(name: 'temperature', value: temperature)
+	sendEvent(name: 'temperature', unit: "C", value: temperature)
 	sendEvent(name: 'battery', value: battery)
 }
 
